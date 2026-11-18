@@ -1,0 +1,23 @@
+{
+  "name": "ali-arefipoor-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A bilingual personal portfolio and self-hosted CMS.",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js",
+    "admin:create": "node scripts/create-admin.js",
+    "check": "node --check server.js && node --check resume.js && node --check public/site.js && node --check public/admin.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "docx": "^9.15.4",
+    "puppeteer": "^25.17.0"
+  },
+  "allowScripts": {
+    "puppeteer@25.17.0": true
+  }
+}
